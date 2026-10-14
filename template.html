@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mampir Temanggung — Mampir, Menikmati, Mengenal</title>
+<meta name="description" content="Menjelajah Temanggung: wisata, budaya, dan kuliner.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="cover">
+  <div class="bg" role="img" aria-label="Pemandangan Temanggung"></div>
+  <h1 class="naik d1">Mampir<br>Temanggung</h1>
+  <p class="tag naik d2">Mampir, Menikmati, Mengenal</p>
+  <p class="sub naik d3">Menjelajah Temanggung: temukan wisata alam, budaya, dan kuliner khas kota di antara Gunung Sindoro dan Sumbing.</p>
+  <a class="btn naik d4" href="#jelajah">Mulai menjelajah</a>
+</header>
+
+<nav>
+  <strong>Mampir Temanggung</strong>
+  <div>
+    <a href="#jelajah" data-pilih="Wisata">Wisata</a>
+    <a href="#jelajah" data-pilih="Budaya">Budaya</a>
+    <a href="#jelajah" data-pilih="Kuliner">Kuliner</a>
+    <a href="#mengenal">Mengenal</a>
+  </div>
+</nav>
+
+<section id="jelajah">
+  <h2 class="jd">Jelajahi Temanggung</h2>
+  <p class="lead">Pilih kategori atau cari nama tempat. Tap tombol Google Maps untuk membuka lokasinya.</p>
+  <div class="stat">{{STAT}}</div>
+  <div class="filter" id="filter">{{FILTER}}</div>
+  <input class="cari" id="cari" type="search" placeholder="Cari tempat..." aria-label="Cari tempat">
+  <div class="grid" id="daftar">{{KARTU}}
+  </div>
+  <div class="kosong" id="kosong" hidden>Belum ada tempat yang cocok. Coba kata kunci atau kategori lain.</div>
+  <p class="catatan">Harga tiket, jam buka, dan kondisi tempat bisa berubah. Cek ulang ke pengelola sebelum berangkat.</p>
+</section>
+
+<section id="mengenal" class="gelap">
+  <h2 class="jd">Mengenal Temanggung</h2>
+  <p class="lead">Sedikit cerita supaya kunjunganmu lebih bermakna.</p>
+  <div class="dua">
+    <div><h3>Kopi</h3><p>Temanggung dikenal sebagai penghasil kopi robusta dari lereng gunung.</p></div>
+    <div><h3>Tembakau</h3><p>Tembakau adalah komoditas khas Temanggung dan bagian penting kehidupan petani di lereng gunung.</p></div>
+    <div><h3>Dua gunung</h3><p>Gunung Sindoro dan Sumbing mengapit wilayah ini dan jadi latar pemandangan di mana-mana.</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>Mampir Temanggung &mdash; dibuat oleh Carista Serly Felisa, Teknologi Rekayasa Otomasi, Universitas Diponegoro.</p>
+  <p>Tugas Algoritma dan Pemrograman. Dibuat dengan Python (build) dan bantuan AI (vibe coding).</p>
+</footer>
+
+<button id="atas" aria-label="Kembali ke atas">&uarr;</button>
+
+</body>
+</html>
